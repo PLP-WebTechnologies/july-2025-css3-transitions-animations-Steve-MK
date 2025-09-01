@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store - Product Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="slide-in">
+    <h1>🌟 My Online Store</h1>
+  </header>
+
+  <!-- Product Card -->
+  <section class="product-card slide-in">
+    <div class="product-image">
+     <img 
+        src="https://images.unsplash.com/photo-1596805358887-d9334ad72dde?w=500&auto=format&fit=crop&q=60" 
+        alt="Stylish Sneakers" 
+        id="productImg"
+        width="100"
+        height="300">
+
+    </div>
+    <div class="product-info">
+      <h2>Stylish Sneakers</h2>
+
+      <!-- Flip Card for Details -->
+      <div class="flip-card" id="flipCard">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            High-quality sneakers perfect for casual wear.
+          </div>
+          <div class="flip-card-back">
+            Material: Leather<br>
+            Sizes: 6-12<br>
+            Color: Red/White/Black
+          </div>
+        </div>
+      </div>
+
+      <p class="price" id="price">$79.99</p>
+
+      <!-- Quantity Selector -->
+      <div class="quantity">
+        <button id="decreaseQty">-</button>
+        <span id="qty">1</span>
+        <button id="increaseQty">+</button>
+      </div>
+
+      <!-- Add to Cart Button -->
+      <button id="addToCartBtn">Add to Cart</button>
+
+      <!-- Cart Notification -->
+      <div id="cartNotification">Product added to cart!</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="slide-in">
+    <p>&copy; 2025 My Online Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
